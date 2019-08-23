@@ -18,7 +18,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Description
 
-You will notice there are several JavaScript files being brought into the index.html file.  Each of those files contain JavaScript problems you need to solve.  If you get stuck on something, skip over it and come back to it later.
+You will notice there are several JavaScript files being brought into the index.html file. Each of those files contain JavaScript problems you need to solve. If you get stuck on something, skip over it and come back to it later.
 
 In meeting the minimum viable product (MVP) specifications listed below, you should have a console full of correct responses to the problems given.
 
@@ -30,13 +30,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+- .forEach() Executes a provided function ONCE for EACH array element
+- .map() creates a NEW ARRAY with the results of calling a provided function on EVERY element in the calling array
+
 2. What is the difference between a function and a method?
+
+- function, called by name and can be passed data (parameters) to operate and can optionally return data. (data is explicitly passed)
+- method, called by a name that is associated with an object, almost identical to a function. (implicitly passed).
 
 3. What is closure?
 
+- Closure is a scope chain, Nested functions have access to outer enclosing functions variables and it's own, but not the other way around. The first function is ran through, but leaves behind it's variables as closure for the nested functions to have access to, like DNA.
+
 4. Describe the four rules of the 'this' keyword.
 
+- Implicit Binding, Whatever object is to the left of the "." when calling is what "this" will refer to.
+
+- Explicit Binding, Whenever you see/use the call or apply method, it is explicitly defined.
+
+- New Binding, Using a constructor function "this" will refer to the object that is created, using the "new" keyword.
+
+- Window Binding, Using "this" in the global scope, this will return the window/console object.
+
 5. Why do we need super() in an extended class?
+
+- Using the super() keyword in extended classes allows the class that is an extension of another to gain access to the props/attributes that it is extending from.
 
 ## Project Set up
 
@@ -46,17 +64,16 @@ Follow these steps to set up and work on your project:
 - [ ] Add TL as collaborator on Github.
 - [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
 - [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [ ] Create a pull request before you start working on the project requirements. You will continuously push your updates throughout the project.
 - [ ] You are now ready to build this project with your preferred IDE
 - [ ] Implement the project on your Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
 - [ ] Add your team lead as a Reviewer on the Pull-request
-- [ ] TL then will count the HW as done by  merging the branch back into master.
-
+- [ ] TL then will count the HW as done by merging the branch back into master.
 
 ## Minimum Viable Product
 
@@ -65,20 +82,28 @@ Your finished project must include all of the following requirements:
 **Pro tip for this challenge: If something seems like it isn't working locally, copy and paste your code up to codepen and take another look at the console.**
 
 ## Task 1: Objects and Arrays
-Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+
+Test your knowledge of objects and arrays.
+
+- [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started. Read the instructions carefully!
 
 ## Task 2: Functions
-This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+
+This challenge takes a look at callbacks and closures as well as scope.
+
+- [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
+
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+
+- [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
+
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+
+- [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
